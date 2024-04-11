@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #dcdde1;
+}
+
+header {
+  background-color: #273c75;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f5f6fa;
+  margin-left: 30px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid #dcdde1;
+  color: #dcdde1;
+}
+
+.btn:hover{
+  transition: .6s;
+  transform: scale(1.1);
+}
+
+.carousel-inner {
+  max-height: 640px;
+}
+
+.carousel-item {
+  height: 640px
+}
+
+.h2-news {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 50px;
+  color: #273c75;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  margin-top: 50px;
+  max-width: 80%;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+  .card-group {
+    grid-template-columns: 1fr;
+  }
+}
